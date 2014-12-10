@@ -1,11 +1,17 @@
 package yy.practice.datastructure.chapter5;
 
-public class MyLinkedList {
+public class MyDoubleEndedLinkedList {
 
 	private MyLink first;
+	private MyLink last;
 
-	public MyLinkedList() {
+	public MyDoubleEndedLinkedList() {
 		first = null;
+		last = null;
+	}
+
+	public boolean isEmpty() {
+		return (first == null);
 	}
 
 	//
@@ -13,6 +19,17 @@ public class MyLinkedList {
 		MyLink newLink = new MyLink(id, dd);
 		newLink.setNext(first);
 		first = newLink;
+	}
+
+	public void insertLast(int id, double dd) {
+		MyLink newLink = new MyLink(id, dd);
+		if (isEmpty()) {
+			first = newLink;
+			last = newLink;
+		} else {
+			last.setNext(newLink);
+			last = last.getNext();
+		}
 	}
 
 	// delete first item
@@ -27,7 +44,7 @@ public class MyLinkedList {
 
 		return temp;
 	}
-
+	
 	public MyLink find(int key) {
 		MyLink current = this.first;
 
@@ -53,9 +70,9 @@ public class MyLinkedList {
 		}
 		if (current == this.first) {
 			first = first.getNext();
-			System.out.println("Find::"+current);
-		} else{
-			System.out.println("Find::"+current);
+			System.out.println("Find::" + current);
+		} else {
+			System.out.println("Find::" + current);
 			previous.setNext(current.getNext());
 		}
 		return current;
@@ -72,15 +89,4 @@ public class MyLinkedList {
 
 		System.out.println("End.");
 	}
-	
-
-	public boolean isEmpty() {
-		return (first == null);
-	}
-
-	public MyLink getFirst() {
-		return first;
-	}
-	
-	
 }
