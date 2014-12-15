@@ -53,9 +53,9 @@ public class MyLinkedList {
 		}
 		if (current == this.first) {
 			first = first.getNext();
-			System.out.println("Find::"+current);
-		} else{
-			System.out.println("Find::"+current);
+			System.out.println("Find::" + current);
+		} else {
+			System.out.println("Find::" + current);
 			previous.setNext(current.getNext());
 		}
 		return current;
@@ -72,7 +72,6 @@ public class MyLinkedList {
 
 		System.out.println("End.");
 	}
-	
 
 	public boolean isEmpty() {
 		return (first == null);
@@ -81,6 +80,9 @@ public class MyLinkedList {
 	public MyLink getFirst() {
 		return first;
 	}
-	
-	
+
+	public MyListIterator getIterator() {
+		return new MyListIterator(this);
+	}
+
 }
