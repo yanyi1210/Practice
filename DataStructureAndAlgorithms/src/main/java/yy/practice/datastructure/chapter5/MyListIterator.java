@@ -19,12 +19,12 @@ public class MyListIterator {
 		return (current.getNext() == null);
 	}
 
-	private void reset() {
+	public void reset() {
 		current = list.getFirst();
 		previous = null;
 	}
 
-	private void nextLink() {
+	public void nextLink() {
 		previous = current;
 		current = current.getNext();
 	}
