@@ -2,37 +2,23 @@ package yy.practice.datastructure.chapter5.ProgrammingProjects;
 
 public class MyLink {
 
-	private int iData; 
-	private double dData;
-	// next link in list
-//	public MyLink next;
+	private double data;
 	private MyLink next;
 
-	public MyLink(int id, double dd) // constructor
-	{
-		iData = id; // initialize data
-		dData = dd; // (‘next’ is automatically set to null)
+	public MyLink(double dd) {
+		data = dd;
 	}
 
-	public void displayLink() // display ourself
-	{
-		System.out.print("{" + iData + "'" + dData + "} ");
+	public void displayLink() {
+		System.out.print(data + "} ");
 	}
 
-	public int getiData() {
-		return iData;
+	public double getData() {
+		return data;
 	}
 
-	public void setiData(int iData) {
-		this.iData = iData;
-	}
-
-	public double getdData() {
-		return dData;
-	}
-
-	public void setdData(double dData) {
-		this.dData = dData;
+	public void setData(double data) {
+		this.data = data;
 	}
 
 	public MyLink getNext() {
