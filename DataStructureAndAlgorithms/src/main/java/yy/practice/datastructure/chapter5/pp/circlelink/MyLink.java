@@ -1,4 +1,4 @@
-package yy.practice.datastructure.chapter5.ProgrammingProjects;
+package yy.practice.datastructure.chapter5.pp.circlelink;
 
 public class MyLink {
 

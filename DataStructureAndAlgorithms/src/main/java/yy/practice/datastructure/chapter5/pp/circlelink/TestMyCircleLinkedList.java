@@ -1,4 +1,4 @@
-package yy.practice.datastructure.chapter5.ProgrammingProjects;
+package yy.practice.datastructure.chapter5.pp.circlelink;
 
 import org.junit.Test;
 
@@ -20,14 +20,15 @@ public class TestMyCircleLinkedList {
 		list.display();
 		list.insert(3);
 		list.display();
-		list.delete(1);
+		list.deleteData(1);
 		list.display();
-		list.delete(4);
+		list.deleteData(4);
 		list.display();
 		list.search(3);
 
 	}
 
+	//5.3
 	@Test
 	public void testCountDown() {
 		MyCircleLinkedList list = new MyCircleLinkedList();
@@ -39,6 +40,7 @@ public class TestMyCircleLinkedList {
 		System.out.println("Last is " + last);
 	}
 
+	//5.5
 	@Test
 	public void findCountOffN() {
 
@@ -55,5 +57,31 @@ public class TestMyCircleLinkedList {
 			System.out.println("When n=" + n);
 			list.display();
 		}
+	}
+
+	@Test
+	public void testDeleteCurrent() {
+		MyCircleLinkedList list = new MyCircleLinkedList();
+		for (int i = 1; i <= 7; i++) {
+			list.insert(i);
+		}
+		list.display();
+		list.deleteCurrent();
+		list.display();
+	}
+
+	//5.4
+	@Test
+	public void testStack() {
+		MyStackWithCircleLinkedList stack = new MyStackWithCircleLinkedList();
+		for (int i = 1; i <= 7; i++) {
+			stack.push(i);
+		}
+		stack.display();
+		while (!stack.isEmpty()) {
+			stack.peek();
+			stack.display();
+		}
+
 	}
 }

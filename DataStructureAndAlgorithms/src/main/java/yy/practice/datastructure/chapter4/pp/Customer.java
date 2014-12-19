@@ -1,4 +1,4 @@
-package yy.practice.datastructure.chapter4.ProgrammingProjects;
+package yy.practice.datastructure.chapter4.pp;
 
 public class Customer {
 

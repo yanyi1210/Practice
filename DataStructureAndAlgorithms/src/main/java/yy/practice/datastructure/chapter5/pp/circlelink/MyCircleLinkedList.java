@@ -1,10 +1,14 @@
-package yy.practice.datastructure.chapter5.ProgrammingProjects;
+package yy.practice.datastructure.chapter5.pp.circlelink;
 
 public class MyCircleLinkedList {
 
 	private MyLink current;
 
 	public MyCircleLinkedList() {
+	}
+
+	public MyLink getCurrent() {
+		return current;
 	}
 
 	public void insert(double data) {
@@ -32,7 +36,7 @@ public class MyCircleLinkedList {
 		return current.getData();
 	}
 
-	public double delete(double data) {
+	public double deleteData(double data) {
 		double temp;
 		MyLink previous = current;
 		MyLink start = current.getNext();
@@ -52,6 +56,30 @@ public class MyCircleLinkedList {
 		return temp;
 	}
 
+	public MyLink deleteCurrent() {
+		MyLink deleted;
+		MyLink start = current;
+		System.out.println("Current is " + start.getData());
+		MyLink previous = null;
+
+		current = start.getNext();
+		while (current.getNext() != start) {
+			previous = current;
+			current = current.getNext();
+		}
+		if (current == current.getNext()) {
+			deleted = current;
+			current = null;
+		} else {
+			previous = current;
+			deleted = current.getNext();
+			previous.setNext(deleted.getNext());
+			System.out.println("Current:"+current.getData());
+		}
+
+		return deleted;
+	}
+
 	public double countDown(int n) {
 		System.out.println("n=" + n);
 		int count = 0;
@@ -62,7 +90,7 @@ public class MyCircleLinkedList {
 				return current.getData();
 			}
 			if (count == n) {
-//				System.out.println("Delete " + current.getNext().getData());
+				// System.out.println("Delete " + current.getNext().getData());
 				current.setNext(current.getNext().getNext());
 				current = current.getNext();
 				count = 0;
@@ -76,9 +104,11 @@ public class MyCircleLinkedList {
 	public void display() {
 		if (!isEmpty()) {
 			MyLink start = current;
+			System.out.println("Display start "+start.getData());
 			while (true) {
 				current = current.getNext();
 				System.out.print(current.getData() + " ; ");
+				
 				if (current == start) {
 					System.out.println("End");
 					break;
