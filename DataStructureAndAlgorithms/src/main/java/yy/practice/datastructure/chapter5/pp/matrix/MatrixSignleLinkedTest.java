@@ -2,7 +2,7 @@ package yy.practice.datastructure.chapter5.pp.matrix;
 
 import org.junit.Test;
 
-public class TestMatrixSignleLinked {
+public class MatrixSignleLinkedTest {
 
 	@Test
 	public void test() {

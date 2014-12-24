@@ -2,7 +2,7 @@ package yy.practice.datastructure.chapter5;
 
 import org.junit.Test;
 
-public class TestMyListIterator {
+public class MyListIteratorTest {
 
 	@Test
 	public void testIterator() {

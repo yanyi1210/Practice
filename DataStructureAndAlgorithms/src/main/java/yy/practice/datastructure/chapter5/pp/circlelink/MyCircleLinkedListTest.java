@@ -2,7 +2,7 @@ package yy.practice.datastructure.chapter5.pp.circlelink;
 
 import org.junit.Test;
 
-public class TestMyCircleLinkedList {
+public class MyCircleLinkedListTest {
 
 	@Test
 	public void test() {
