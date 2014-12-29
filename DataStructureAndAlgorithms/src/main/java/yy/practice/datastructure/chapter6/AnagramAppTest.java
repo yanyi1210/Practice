@@ -7,7 +7,7 @@ public class AnagramAppTest {
 	@Test
 	public void testAnagram() {
 		AnagramApp testApp = new AnagramApp();
-		testApp.doAnagram("cat");
+		testApp.doAnagram("cats");
 	}
 
 }
