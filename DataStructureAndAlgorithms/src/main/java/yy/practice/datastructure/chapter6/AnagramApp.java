@@ -3,12 +3,20 @@ package yy.practice.datastructure.chapter6;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.junit.Test;
+
 public class AnagramApp {
 
 	public int size;
 	public int count;
 	public char[] array;
 	public Set<String> uniqueAnagram;
+	
+	@Test
+	public void testAnagram() {
+		AnagramApp testApp = new AnagramApp();
+		testApp.doAnagram("cats");
+	}
 
 	public void doAnagram(String input) {
 		size = input.length();
