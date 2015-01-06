@@ -2,7 +2,7 @@ package yy.practice.datastructure.chapter6;
 
 import org.junit.Test;
 
-public class RecursiveBinarySearchTest {
+public class RecursiveBinarySearchApp {
 
 	@Test
 	public void testBinarySearch() {

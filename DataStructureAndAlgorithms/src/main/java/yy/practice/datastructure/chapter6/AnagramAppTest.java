@@ -14,7 +14,6 @@ public class AnagramAppTest {
 
 }
 
-
 class AnagramApp {
 
 	public int size;
