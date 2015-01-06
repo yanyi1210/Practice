@@ -5,18 +5,12 @@ import java.util.Set;
 
 import org.junit.Test;
 
-public class AnagramApp {
+public class AnagramApp2 {
 
 	public int size;
 	public int count;
 	public char[] array;
 	public Set<String> uniqueAnagram;
-	
-	@Test
-	public void testAnagram() {
-		AnagramApp testApp = new AnagramApp();
-		testApp.doAnagram("cats");
-	}
 
 	public void doAnagram(String input) {
 		size = input.length();
