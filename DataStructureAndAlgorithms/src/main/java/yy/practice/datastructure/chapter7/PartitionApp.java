@@ -71,7 +71,7 @@ class PartitionArray {
 			}
 
 		}
-		return right;
+		return leftPtr;
 
 	}
 
