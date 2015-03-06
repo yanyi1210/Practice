@@ -1,4 +1,4 @@
-package yy.practice.leetcode;
+package yy.practice.leetcode.freqency5;
 
 import java.util.HashMap;
 
