@@ -19,7 +19,7 @@ package yy.practice.leetcode.freqency5;
 
 import org.junit.Test;
 
-public class StringtoInteger_Atoi {
+public class ID8_StringtoInteger_Atoi {
 
 	public static int INT_MAX = 2147483647;
 	public static int INT_MIN = -2147483648;

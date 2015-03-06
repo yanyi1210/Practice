@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import org.junit.Test;
 
-public class TwoSum {
+public class ID1_TwoSum {
 
 	@Test
 	public void test() {
