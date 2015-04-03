@@ -14,6 +14,6 @@
 
 	<!-- http://localhost:9081/PracticeJSF/home.xhtml -->
 	<!-- http://localhost:9081/PracticeJSF/home.jsf -->
-
+	<!-- http://localhost:8080//PracticeJSF-0.0.1-SNAPSHOT/home.jsf -->
 
 </web-app>

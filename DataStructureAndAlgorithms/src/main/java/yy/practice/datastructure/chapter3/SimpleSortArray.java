@@ -124,22 +124,22 @@ public class SimpleSortArray {
 	public void insertionSort() {
 
 		int outerIndex, innerIndex;
-		int compare = 0, copy = 0;
+//		int compare = 0, copy = 0;
 		for (outerIndex = 1; outerIndex < nElems; outerIndex++) {
 			// display();
 			innerIndex = outerIndex;
 			long temp = array1[outerIndex];
 			while (innerIndex > 0 && array1[innerIndex - 1] >= temp) {
-				compare++;
+//				compare++;
 				array1[innerIndex] = array1[innerIndex - 1];
-				copy++;
+//				copy++;
 				innerIndex--;
 			}
 			array1[innerIndex] = temp;
-			copy++;
+//			copy++;
 		}
-		System.out.println("Number of comparation:" + compare
-				+ "; Number of copy:" + copy);
+//		System.out.println("Number of comparation:" + compare
+//				+ "; Number of copy:" + copy);
 	}
 
 	// 3.6
